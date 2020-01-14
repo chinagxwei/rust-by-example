@@ -1,5 +1,5 @@
-pub mod hello_example_1;
-pub mod primitives_example_2;
-pub mod custom_types_example_3;
-pub mod variable_bindings_example_4;
-pub mod types_example_5;
+pub mod example_1_hello;
+pub mod example_2_primitives;
+pub mod example_3_custom_types;
+pub mod example_4_variable_bindings;
+pub mod example_5_types;

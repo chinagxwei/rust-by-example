@@ -41,7 +41,7 @@ pub fn print_example() {
 
     // 但是像结构体这样的自定义类型需要更复杂的方式来处理。
     // 下面语句无法运行。
-    println!("This struct `{:?}` won't hello_example_1.print_example...", Structure(3));
+    println!("This struct `{:?}` won't example_1_hello.print_example...", Structure(3));
     // 改正 ^ 注释掉此行。
 }
 

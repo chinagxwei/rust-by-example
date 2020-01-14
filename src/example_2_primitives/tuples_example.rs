@@ -53,7 +53,7 @@ mod tests {
         println!("one element tuple: {:?}", (5u32, ));
         println!("just an integer: {:?}", (5u32));
 
-        let tuple = (1, "hello_example_1", 4.5, true);
+        let tuple = (1, "example_1_hello", 4.5, true);
 
         let (a, b, c, d) = tuple;
 
