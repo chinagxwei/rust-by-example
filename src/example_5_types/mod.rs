@@ -1,4 +1,4 @@
-mod alias_example;
-mod cast_example;
-mod inference_example;
-mod literals_example;
+mod example_5_4_alias;
+mod example_5_1_cast;
+mod example_5_3_inference;
+mod example_5_2_literals;

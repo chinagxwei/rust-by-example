@@ -1,3 +1,3 @@
-pub mod structs_example;
-pub mod enum_example;
-pub mod constants_example;
+pub mod example_3_1_structs;
+pub mod example_3_2_enum;
+pub mod example_3_3_constants;

@@ -1,8 +1,8 @@
 #![allow(dead_code)]
 
-mod c_like_example;
-mod enum_use_example;
-mod test_case_linked_list_example;
+mod example_3_2_2_c_like;
+mod example_3_2_1_enum_use;
+mod example_3_2_3_test_case_linked_list;
 enum WebEvent {
     PageLoad,
     PageUnload,

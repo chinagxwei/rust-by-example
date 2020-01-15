@@ -1,6 +1,6 @@
-mod mut_example;
-mod scope_example;
-mod declare_example;
+mod example_4_1_mut;
+mod example_4_2_scope;
+mod example_4_3_declare;
 
 #[cfg(test)]
 fn variable_bindings_example() {

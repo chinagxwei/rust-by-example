@@ -1,6 +1,6 @@
-pub mod literals_example;
-pub mod tuples_example;
-pub mod array_example;
+pub mod example_2_1_literals;
+pub mod example_2_2_tuples;
+pub mod example_2_3_array;
 
 pub fn primitive_example() {
 // 变量可以给出类型说明。

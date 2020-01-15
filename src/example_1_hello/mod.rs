@@ -1,6 +1,6 @@
-pub mod comment_example;
+pub mod example_1_1_comment;
 
-pub mod print_example;
+pub mod example_1_2_print;
 
 pub fn hello_example() {
     println!("Hello World!");

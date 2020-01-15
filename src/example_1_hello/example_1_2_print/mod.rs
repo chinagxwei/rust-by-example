@@ -1,6 +1,6 @@
-pub mod print_debug_example;
-pub mod print_display_example;
-pub mod fmt_example;
+pub mod example_1_2_1_print_debug;
+pub mod example_1_2_2_print_display;
+pub mod example_1_2_3_fmt;
 
 pub fn print_example() {
     // 通常情况下，`{}` 会被任意变量内容所替换。
@@ -41,7 +41,7 @@ pub fn print_example() {
 
     // 但是像结构体这样的自定义类型需要更复杂的方式来处理。
     // 下面语句无法运行。
-    println!("This struct `{:?}` won't example_1_hello.print_example...", Structure(3));
+    println!("This struct `{:?}` won't example_1_hello.example_1_2_print...", Structure(3));
     // 改正 ^ 注释掉此行。
 }
 
