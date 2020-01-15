@@ -3,3 +3,5 @@ pub mod example_2_primitives;
 pub mod example_3_custom_types;
 pub mod example_4_variable_bindings;
 pub mod example_5_types;
+pub mod example_6_conversion;
+pub mod example_7_expression;
