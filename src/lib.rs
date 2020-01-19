@@ -6,3 +6,4 @@ pub mod example_5_types;
 pub mod example_6_conversion;
 pub mod example_7_expression;
 pub mod example_8_flow_control;
+pub mod example_9_fn;
