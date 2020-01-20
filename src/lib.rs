@@ -7,3 +7,5 @@ pub mod example_6_conversion;
 pub mod example_7_expression;
 pub mod example_8_flow_control;
 pub mod example_9_fn;
+pub mod example_10_mod;
+pub mod example_11_crates;
