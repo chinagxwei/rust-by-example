@@ -1,5 +1,6 @@
 
 // rustc --crate-type=lib ./src/example_11_crates/example_11_1_lib.rs
+// 执行以上命令生成rlib包
 
 pub fn public_function() {
     println!("called rary's `public_function()`");
