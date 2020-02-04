@@ -1,18 +1,16 @@
-
 struct ToDrop;
 
-impl Drop for ToDrop{
+impl Drop for ToDrop {
     fn drop(&mut self) {
         println!("ToDrop is being dropped");
     }
 }
 
-fn create_box(){
+fn create_box() {
     let box_1 = Box::new(3i32);
 }
 
-fn example_15_1_raii(){
-
+fn example_15_1_raii() {
     let box_2 = Box::new(5i32);
 
     {
