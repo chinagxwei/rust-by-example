@@ -13,3 +13,4 @@ mod example_12_cargo;
 mod example_13_attribute;
 mod example_14_generics;
 mod example_15_scope;
+mod example_16_trait;
