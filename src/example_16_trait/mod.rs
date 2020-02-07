@@ -54,20 +54,16 @@ impl Animal for Sheep {
     }
 }
 
-fn example_16_trait() {
-    let mut dolly: Sheep = Animal::new("Dolly");
-
-    dolly.talk();
-    dolly.shear();
-    dolly.talk();
-}
-
 #[cfg(test)]
 mod tests {
     use super::*;
 
     #[test]
-    fn test_example_16_trait() {
-        example_16_trait();
+    fn example_16_trait() {
+        let mut dolly: Sheep = Animal::new("Dolly");
+
+        dolly.talk();
+        dolly.shear();
+        dolly.talk();
     }
 }

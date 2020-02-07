@@ -17,7 +17,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_c_like_example() {
+    fn example_3_2_2_c_like() {
         println!("zero is {}", Number::Zero as i32);
         println!("one is {}", Number::One as i32);
         println!("roses are #{:06x}", Color::Red as i32);

@@ -10,19 +10,16 @@ impl Owner {
     }
 }
 
-fn example_15_4_3_methods() {
-    let mut owner = Owner(10);
-
-    owner.add_one();
-    owner.print();
-}
 
 #[cfg(test)]
 mod tests {
     use super::*;
 
     #[test]
-    fn test_example_15_4_3_methods() {
-        example_15_4_3_methods();
+    fn example_15_4_3_methods() {
+        let mut owner = Owner(10);
+
+        owner.add_one();
+        owner.print();
     }
 }

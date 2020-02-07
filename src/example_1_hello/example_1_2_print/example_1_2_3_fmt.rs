@@ -33,7 +33,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_fmt() {
+    fn example_1_2_3_fmt() {
         for city in [
             City { name: "Dublin", lat: 53.347778, lon: -6.259722 },
             City { name: "Oslo", lat: 59.95, lon: 10.75 },

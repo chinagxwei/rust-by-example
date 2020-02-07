@@ -18,17 +18,15 @@ macro_rules! test {
 }
 
 
-fn example_17_1_2_overload(){
-    test!((1i32 + 1 == 2i32); and 2i32 * 2 == 4i32);
-    test!(true; or false);
-}
+
 
 #[cfg(test)]
 mod tests {
     use super::*;
 
     #[test]
-    fn test_example_17_1_2_overload() {
-        example_17_1_2_overload();
+    fn example_17_1_2_overload(){
+        test!((1i32 + 1 == 2i32); and 2i32 * 2 == 4i32);
+        test!(true; or false);
     }
 }

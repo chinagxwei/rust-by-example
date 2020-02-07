@@ -30,7 +30,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_example_8_5_2_guard() {
+    fn example_8_5_2_guard() {
         example_8_5_2_guard_1();
         example_8_5_2_guard_2();
     }

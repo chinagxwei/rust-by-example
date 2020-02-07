@@ -6,7 +6,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test() {
+    fn example_9_2_6_closure_examples() {
 
     }
 }

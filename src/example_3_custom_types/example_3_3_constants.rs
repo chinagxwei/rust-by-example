@@ -10,7 +10,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_constants_example() {
+    fn example_3_3_constants() {
         let n = 16;
 
         println!("This is {}", LANGUAGE);

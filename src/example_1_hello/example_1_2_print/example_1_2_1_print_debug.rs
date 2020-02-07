@@ -16,7 +16,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_debug() {
+    fn example_1_2_1_print_debug() {
         // 使用 `{:?}` 打印和使用 `{}` 类似。
         println!("{:?} months in a year.", 12);
         println!("{1:?} {0:?} is the {actor:?} name.",

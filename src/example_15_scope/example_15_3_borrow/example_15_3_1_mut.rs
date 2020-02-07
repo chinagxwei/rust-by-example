@@ -14,32 +14,28 @@ fn new_edition(book: &mut Book) {
     println!("I mutably borrowed {} - {} edition", book.title, book.year);
 }
 
-fn example_15_3_1_mut(){
-
-    let immutable = Book{
-        author: "Douglas Hofstadter",
-        title: "Godel, Escher, Bach",
-        year: 1979
-    };
-
-    let mut mutable = immutable;
-
-    borrow_book(&immutable);
-
-    borrow_book(&mutable);
-
-    new_edition(&mut mutable);
-
-//    new_edition(&mut immutable);
-}
 
 #[cfg(test)]
 mod tests {
     use super::*;
 
     #[test]
-    fn test_example_15_3_1_mut() {
-        example_15_3_1_mut();
+    fn example_15_3_1_mut() {
+        let immutable = Book {
+            author: "Douglas Hofstadter",
+            title: "Godel, Escher, Bach",
+            year: 1979,
+        };
+
+        let mut mutable = immutable;
+
+        borrow_book(&immutable);
+
+        borrow_book(&mutable);
+
+        new_edition(&mut mutable);
+
+//    new_edition(&mut immutable);
     }
 }
 

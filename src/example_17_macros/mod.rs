@@ -19,16 +19,12 @@ macro_rules! say_hello {
     };
 }
 
-fn example_17_macros(){
-    say_hello!();
-}
-
 #[cfg(test)]
 mod tests {
     use super::*;
 
     #[test]
-    fn test_example_17_macros() {
-        example_17_macros();
+    fn example_17_macros(){
+        say_hello!();
     }
 }

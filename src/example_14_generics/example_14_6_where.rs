@@ -29,18 +29,15 @@ impl<T> PrintInOption for T
     }
 }
 
-fn example_14_6_where() {
-    let vec = vec![1, 2, 3];
-
-    vec.print_in_option();
-}
 
 #[cfg(test)]
 mod tests {
     use super::*;
 
     #[test]
-    fn test_example_14_6_where() {
-        example_14_6_where();
+    fn example_14_6_where() {
+        let vec = vec![1, 2, 3];
+
+        vec.print_in_option();
     }
 }

@@ -17,7 +17,7 @@ mod tests {
     use Work::{Civilian, Soldier};
 
     #[test]
-    fn test_enum_use_example() {
+    fn example_3_2_1_enum_use() {
         let status = Poor;
 
         let work = Civilian;

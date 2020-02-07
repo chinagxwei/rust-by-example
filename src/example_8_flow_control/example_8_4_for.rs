@@ -62,7 +62,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_example_8_4_for() {
+    fn example_8_4_for() {
         example_8_4_for_1();
         example_8_4_for_2();
         example_8_4_for_3();

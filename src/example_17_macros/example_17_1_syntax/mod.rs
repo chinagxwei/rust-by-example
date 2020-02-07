@@ -7,7 +7,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_examole_17_1_syntax() {
+    fn example_17_1_syntax() {
 
     }
 }

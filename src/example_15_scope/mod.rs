@@ -8,5 +8,5 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test() {}
+    fn example_15_scope() {}
 }

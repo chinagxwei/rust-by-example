@@ -15,22 +15,19 @@ impl TryFrom<i32> for EvenNumber {
     }
 }
 
-fn try_from_try_into_example() {
-    assert_eq!(EvenNumber::try_from(8), Ok(EvenNumber(8)));
-    assert_eq!(EvenNumber::try_from(5), Err(()));
-
-    let result: Result<EvenNumber, ()> = 8i32.try_into();
-    assert_eq!(result, Ok(EvenNumber(8)));
-    let result: Result<EvenNumber, ()> = 5i32.try_into();
-    assert_eq!(result, Err(()))
-}
 
 #[cfg(test)]
 mod tests {
     use super::*;
 
     #[test]
-    fn test_try_from_try_into_example() {
-        try_from_try_into_example();
+    fn example_6_3_try_from_and_try_into() {
+        assert_eq!(EvenNumber::try_from(8), Ok(EvenNumber(8)));
+        assert_eq!(EvenNumber::try_from(5), Err(()));
+
+        let result: Result<EvenNumber, ()> = 8i32.try_into();
+        assert_eq!(result, Ok(EvenNumber(8)));
+        let result: Result<EvenNumber, ()> = 5i32.try_into();
+        assert_eq!(result, Err(()))
     }
 }

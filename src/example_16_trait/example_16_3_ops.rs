@@ -28,17 +28,13 @@ impl Add<Foo> for Bar {
     }
 }
 
-fn example_16_2_ops() {
-    println!("Foo + Bar = {:?}", Foo + Bar);
-    println!("Bar + Foo = {:?}", Bar + Foo);
-}
-
 #[cfg(test)]
 mod tests {
     use super::*;
 
     #[test]
-    fn test_example_16_2_ops() {
-        example_16_2_ops();
+    fn example_16_2_ops() {
+        println!("Foo + Bar = {:?}", Foo + Bar);
+        println!("Bar + Foo = {:?}", Bar + Foo);
     }
 }

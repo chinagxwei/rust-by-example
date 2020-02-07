@@ -15,20 +15,16 @@ macro_rules! calculate {
     }
 }
 
-fn example_17_4_variadics(){
-    calculate!{
-        eval 1 + 2,
-        eval 3 + 4,
-        eval (2 * 3) + 1
-    }
-}
-
 #[cfg(test)]
 mod tests {
     use super::*;
 
     #[test]
-    fn test_example_17_4_variadics() {
-        example_17_4_variadics();
+    fn example_17_4_variadics(){
+        calculate!{
+            eval 1 + 2,
+            eval 3 + 4,
+            eval (2 * 3) + 1
+        }
     }
 }

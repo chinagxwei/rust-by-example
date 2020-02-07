@@ -23,7 +23,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_tuples() {
+    fn example_2_2_tuples() {
         let long_tuple = (
             1u8,
             2u16,

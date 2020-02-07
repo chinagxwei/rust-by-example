@@ -28,16 +28,13 @@ fn fizzbuzz_to(n: u32) {
     }
 }
 
-fn example_9_fn(){
-    fizzbuzz_to(51);
-}
 
 #[cfg(test)]
 mod tests {
     use super::*;
 
     #[test]
-    fn test_example_9_fn() {
-        example_9_fn();
+    fn example_9_fn() {
+        fizzbuzz_to(51);
     }
 }

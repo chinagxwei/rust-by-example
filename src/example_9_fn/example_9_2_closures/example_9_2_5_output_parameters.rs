@@ -8,19 +8,16 @@ fn create_fnmut() -> impl FnMut() {
     move || println!("This is a: {}", text)
 }
 
-fn example_9_2_5_output_parameters() {
-    let fn_plain = create_fn();
-    let mut fn_mut = create_fnmut();
-    fn_plain();
-    fn_mut();
-}
 
 #[cfg(test)]
 mod tests {
     use super::*;
 
     #[test]
-    fn test_example_9_2_5_output_parameters() {
-        example_9_2_5_output_parameters();
+    fn example_9_2_5_output_parameters() {
+        let fn_plain = create_fn();
+        let mut fn_mut = create_fnmut();
+        fn_plain();
+        fn_mut();
     }
 }

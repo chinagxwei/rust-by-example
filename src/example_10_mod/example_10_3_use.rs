@@ -12,26 +12,23 @@ mod deeply {
     }
 }
 
-fn example_10_3_use() {
-    other_function();
-
-    println!("Entering block");
-
-    {
-        use deeply::nested::function;
-        function();
-        println!("Leaving block")
-    }
-
-    function();
-}
 
 #[cfg(test)]
 mod tests {
     use super::*;
 
     #[test]
-    fn test_example_10_3_use() {
-        example_10_3_use();
+    fn example_10_3_use() {
+        other_function();
+
+        println!("Entering block");
+
+        {
+            use deeply::nested::function;
+            function();
+            println!("Leaving block")
+        }
+
+        function();
     }
 }

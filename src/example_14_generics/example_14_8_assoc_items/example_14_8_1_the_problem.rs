@@ -26,29 +26,26 @@ fn difference<A, B, C>(container: &C) -> i32
     container.last() - container.first()
 }
 
-fn example_14_8_1_the_problem() {
-    let num_1 = 3;
-    let num_2 = 10;
-
-    let container = Container(num_1, num_2);
-    println!(
-        "Does container contain {} and {}: {}",
-        &num_1,
-        &num_2,
-        container.contains(&num_1, &num_2)
-    );
-    println!("First number: {}", container.first());
-    println!("Last number: {}", container.last());
-
-    println!("The difference is: {}", difference(&container));
-}
 
 #[cfg(test)]
 mod tests {
     use super::*;
 
     #[test]
-    fn test_example_14_8_1_the_problem() {
-        example_14_8_1_the_problem();
+    fn example_14_8_1_the_problem() {
+        let num_1 = 3;
+        let num_2 = 10;
+
+        let container = Container(num_1, num_2);
+        println!(
+            "Does container contain {} and {}: {}",
+            &num_1,
+            &num_2,
+            container.contains(&num_1, &num_2)
+        );
+        println!("First number: {}", container.first());
+        println!("Last number: {}", container.last());
+
+        println!("The difference is: {}", difference(&container));
     }
 }

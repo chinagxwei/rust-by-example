@@ -11,7 +11,7 @@ mod tests {
     use super::*;
     
     #[test]
-    fn test() {
+    fn example_8_flow_control() {
         
     }
 }

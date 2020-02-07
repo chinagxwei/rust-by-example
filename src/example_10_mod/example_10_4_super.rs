@@ -37,16 +37,13 @@ mod my {
     }
 }
 
-fn example_10_4_super() {
-    my::indirect_call();
-}
 
 #[cfg(test)]
 mod tests {
     use super::*;
 
     #[test]
-    fn test_example_10_4_super() {
-        example_10_4_super();
+    fn example_10_4_super() {
+        my::indirect_call();
     }
 }

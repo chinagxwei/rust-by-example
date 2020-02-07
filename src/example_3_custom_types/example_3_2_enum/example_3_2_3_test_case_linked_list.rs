@@ -34,7 +34,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_test_case_linked_example() {
+    fn example_3_2_3_test_case_linked_list() {
         let mut list = List::new();
         list = list.prepend(1);
         list = list.prepend(2);

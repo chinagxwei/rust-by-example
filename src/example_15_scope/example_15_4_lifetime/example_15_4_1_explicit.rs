@@ -6,20 +6,17 @@ fn failed_borrow<'a>() {
     let x = 12;
 }
 
-fn example_15_4_1_explicit() {
-    let (four,nine) = (4,9);
-
-    print_refs(&four,&nine);
-
-    failed_borrow();
-}
 
 #[cfg(test)]
 mod tests {
     use super::*;
 
     #[test]
-    fn test_example_15_4_1_explicit() {
-        example_15_4_1_explicit();
+    fn example_15_4_1_explicit() {
+        let (four, nine) = (4, 9);
+
+        print_refs(&four, &nine);
+
+        failed_borrow();
     }
 }

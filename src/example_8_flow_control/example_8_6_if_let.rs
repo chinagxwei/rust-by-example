@@ -54,7 +54,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_example_8_6_if_let() {
+    fn example_8_6_if_let() {
         example_8_6_if_let_1();
         example_8_6_if_let_2();
     }

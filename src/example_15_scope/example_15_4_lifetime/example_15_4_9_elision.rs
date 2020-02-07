@@ -10,22 +10,19 @@ fn elided_pass(x: &i32) -> &i32 { x }
 
 fn annotated_pass<'a>(x: &'a i32) -> &'a i32 { x }
 
-fn example_15_4_9_elision() {
-    let x = 3;
-
-    elided_input(&x);
-    annotated_input(&x);
-
-    println!("`elided_pass`: {}", elided_pass(&x));
-    println!("`annotated_pass`: {}", annotated_pass(&x));
-}
 
 #[cfg(test)]
 mod tests {
     use super::*;
 
     #[test]
-    fn test_example_15_4_9_elision() {
-        example_15_4_9_elision();
+    fn example_15_4_9_elision() {
+        let x = 3;
+
+        elided_input(&x);
+        annotated_input(&x);
+
+        println!("`elided_pass`: {}", elided_pass(&x));
+        println!("`annotated_pass`: {}", annotated_pass(&x));
     }
 }

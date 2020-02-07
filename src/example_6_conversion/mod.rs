@@ -7,7 +7,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test() {
+    fn example_6_conversion() {
 
     }
 }

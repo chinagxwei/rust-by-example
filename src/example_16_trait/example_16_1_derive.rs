@@ -14,26 +14,22 @@ impl Inches {
 
 struct Seconds(i32);
 
-fn example_16_1_derive() {
-    let one_second = Seconds(3);
-
-    let foot = Inches(9);
-
-    println!("One foot equals {:?}", foot);
-
-    let meter = Centimeters(100f64);
-
-    let cmp = if foot.to_centimeters() < meter { "smaller" } else { "bigger" };
-
-    println!("One foot is {} than one meter.", cmp);
-}
-
 #[cfg(test)]
 mod tests {
     use super::*;
 
     #[test]
-    fn test_example_16_1_derive() {
-        example_16_1_derive();
+    fn example_16_1_derive() {
+        let one_second = Seconds(3);
+
+        let foot = Inches(9);
+
+        println!("One foot equals {:?}", foot);
+
+        let meter = Centimeters(100f64);
+
+        let cmp = if foot.to_centimeters() < meter { "smaller" } else { "bigger" };
+
+        println!("One foot is {} than one meter.", cmp);
     }
 }

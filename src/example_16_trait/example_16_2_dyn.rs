@@ -22,19 +22,15 @@ fn random_animal(random_number: f64) -> Box<dyn Animal> {
     if random_number < 0.5 { Box::new(Sheep) } else { Box::new(Cow) }
 }
 
-fn example_16_2_dyn() {
-    let random_number = 0.234;
-    let animal = random_animal(random_number);
-
-    println!("You've randomly chosen an animal, and it says {}", animal.noise());
-}
-
 #[cfg(test)]
 mod tests {
     use super::*;
 
     #[test]
-    fn test_example_16_2_dyn() {
-        example_16_2_dyn();
+    fn example_16_2_dyn() {
+        let random_number = 0.234;
+        let animal = random_animal(random_number);
+
+        println!("You've randomly chosen an animal, and it says {}", animal.noise());
     }
 }

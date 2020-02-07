@@ -9,7 +9,7 @@ mod tests {
     use std::mem;
 
     #[test]
-    fn test_array() {
+    fn example_2_3_array() {
         // 定长数组（类型标记是多余的）
         let xs: [i32; 5] = [1, 2, 3, 4, 5];
 

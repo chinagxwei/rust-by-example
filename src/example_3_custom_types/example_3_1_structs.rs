@@ -31,7 +31,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_structs_example() {
+    fn example_3_1_structs() {
         let name = "Peter";
         let age = 27;
         let peter = Person { name, age };

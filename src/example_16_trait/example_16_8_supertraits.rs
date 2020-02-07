@@ -54,23 +54,19 @@ fn comp_sci_student_greeting(student: &dyn CompSciStudent) -> String {
     )
 }
 
-fn example_16_8_supertraits() {
-    let student = SuperStudent {
-        name: "wayne".to_string(),
-        university: "GX".to_string(),
-        git_username: "wei".to_string(),
-        fav_language: "Rust".to_string(),
-    };
-
-    println!("{}", comp_sci_student_greeting(&student));
-}
-
 #[cfg(test)]
 mod tests {
     use super::*;
 
     #[test]
-    fn test_example_16_8_supertraits() {
-        example_16_8_supertraits();
+    fn example_16_8_supertraits() {
+        let student = SuperStudent {
+            name: "wayne".to_string(),
+            university: "GX".to_string(),
+            git_username: "wei".to_string(),
+            fav_language: "Rust".to_string(),
+        };
+
+        println!("{}", comp_sci_student_greeting(&student));
     }
 }

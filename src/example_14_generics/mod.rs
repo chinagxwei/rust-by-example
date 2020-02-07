@@ -16,24 +16,21 @@ struct SingleGen<T>(T);
 
 fn foo<T>(arg: T) -> T { arg }
 
-fn example_14_generics() {
-    let s = Single(A);
-
-    let char: SingleGen<char> = SingleGen('a');
-
-    let t = SingleGen(A);
-    let is_i32 = SingleGen(6);
-    let is_char = SingleGen('a');
-
-    println!("foo is: {}", foo::<&str>("str"))
-}
 
 #[cfg(test)]
 mod tests {
     use super::*;
 
     #[test]
-    fn test_example_14_generics() {
-        example_14_generics();
+    fn example_14_generics() {
+        let s = Single(A);
+
+        let char: SingleGen<char> = SingleGen('a');
+
+        let t = SingleGen(A);
+        let is_i32 = SingleGen(6);
+        let is_char = SingleGen('a');
+
+        println!("foo is: {}", foo::<&str>("str"))
     }
 }

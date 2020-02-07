@@ -42,7 +42,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_enum_example() {
+    fn example_3_2_enum() {
         let pressed = WebEvent::KeyPress('y');
         let pasted = WebEvent::Paste(String::from("my text"));
         let click = WebEvent::Click { x: 30, y: 90 };

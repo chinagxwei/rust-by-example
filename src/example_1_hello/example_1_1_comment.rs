@@ -18,17 +18,14 @@
 
 // 观察块注释是如何简单地对表达式进行修改的，行注释则不能这样。
 // 删除注释分隔符将会改变结果。
-pub fn comment() {
-    let x = 5 + /* 90 + */ 5;
-    println!("Is `x` 10 or 100? x = {}", x);
-}
 
 #[cfg(test)]
 mod tests {
     use super::*;
 
     #[test]
-    fn test_comment() {
-        comment();
+    fn example_1_1_comment() {
+        let x = 5 + /* 90 + */ 5;
+        println!("Is `x` 10 or 100? x = {}", x);
     }
 }

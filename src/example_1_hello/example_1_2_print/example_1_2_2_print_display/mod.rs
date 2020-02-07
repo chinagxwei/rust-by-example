@@ -25,7 +25,7 @@ mod tests {
     use super::*;
     
     #[test]
-    fn test_print_display() {
+    fn example_1_2_2_print_display() {
         let minmax = MinMax(0, 14);
 
         println!("Compare structures:");

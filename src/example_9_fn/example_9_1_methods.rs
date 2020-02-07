@@ -48,27 +48,24 @@ impl Pair {
     }
 }
 
-fn example_9_1_methods() {
-    let rectangle = Rectangle { p1: Point::origin(), p2: Point::new(3.0, 4.0) };
-
-    println!("Rectangle perimeter: {}", rectangle.perimeter());
-    println!("Rectangle area: {}", rectangle.area());
-
-    let mut square = Rectangle { p1: Point::origin(), p2: Point::new(1.0, 1.0) };
-
-    square.translate(1.0, 1.0);
-
-    let pair = Pair { 0: Box::new(1), 1: Box::new(2) };
-
-    pair.destroy();
-}
 
 #[cfg(test)]
 mod tests {
     use super::*;
 
     #[test]
-    fn test_example_9_1_methods() {
-        example_9_1_methods();
+    fn example_9_1_methods() {
+        let rectangle = Rectangle { p1: Point::origin(), p2: Point::new(3.0, 4.0) };
+
+        println!("Rectangle perimeter: {}", rectangle.perimeter());
+        println!("Rectangle area: {}", rectangle.area());
+
+        let mut square = Rectangle { p1: Point::origin(), p2: Point::new(1.0, 1.0) };
+
+        square.translate(1.0, 1.0);
+
+        let pair = Pair { 0: Box::new(1), 1: Box::new(2) };
+
+        pair.destroy();
     }
 }

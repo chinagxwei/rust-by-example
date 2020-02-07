@@ -19,7 +19,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_testcase_list() {
+    fn example_1_2_2_1_test_case_list() {
         let v = List(vec![1, 2, 3]);
         println!("{}", v);
     }

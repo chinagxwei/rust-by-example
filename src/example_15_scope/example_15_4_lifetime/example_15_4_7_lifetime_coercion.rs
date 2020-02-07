@@ -6,26 +6,23 @@ fn choose_first<'a: 'b, 'b>(first: &'a i32, _: &'b i32) -> &'b i32 {
     first
 }
 
-fn example_15_4_7_lifetime_coercion() {
-    let first = 2;
-    println!("{:p}", &first);
-    {
-        let second = 3;
-
-        println!("The product is {}", multiply(&first, &second));
-        println!("{} is the first", choose_first(&first, &second));
-        println!("{:p}", &choose_first(&first, &second));
-    }
-
-    println!("{:p}", &first);
-}
 
 #[cfg(test)]
 mod tests {
     use super::*;
 
     #[test]
-    fn test_example_15_4_7_lifetime_coercion() {
-        example_15_4_7_lifetime_coercion();
+    fn example_15_4_7_lifetime_coercion() {
+        let first = 2;
+        println!("{:p}", &first);
+        {
+            let second = 3;
+
+            println!("The product is {}", multiply(&first, &second));
+            println!("{} is the first", choose_first(&first, &second));
+            println!("{:p}", &choose_first(&first, &second));
+        }
+
+        println!("{:p}", &first);
     }
 }
