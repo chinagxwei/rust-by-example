@@ -4,6 +4,8 @@ mod example_19_3_str;
 mod example_19_4_option;
 mod example_19_5_result;
 mod example_19_6_panic;
+mod example_19_7_hash;
+mod example_19_8_rc;
 
 
 #[cfg(test)]
